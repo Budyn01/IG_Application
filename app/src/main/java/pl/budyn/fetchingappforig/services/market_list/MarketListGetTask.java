@@ -17,6 +17,7 @@ import pl.budyn.fetchingappforig.services.MarketJsonParser;
 public abstract class MarketListGetTask extends AsyncTask<Void, Void, List<Market>> {
 
     private static final String TAG = "MarketListGetTask";
+
     private List<Market> marketList;
     private String url;
 
@@ -39,7 +40,7 @@ public abstract class MarketListGetTask extends AsyncTask<Void, Void, List<Marke
         return marketList;
     }
 
-    protected void setUrl(String url) {
+    void setUrl(String url) {
         this.url = url;
     }
 

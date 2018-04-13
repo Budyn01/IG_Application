@@ -26,11 +26,11 @@ public class MarketJsonParser {
 
     private void parse() throws IOException {
         jsonReader.beginObject();
-        while(jsonReader.hasNext()) {
+        while (jsonReader.hasNext()) {
             String key = jsonReader.nextName();
-            if(key.equals("markets")) {
+            if (key.equals("markets")) {
                 jsonReader.beginArray();
-                while(jsonReader.hasNext()) {
+                while (jsonReader.hasNext()) {
                     readMarketObject();
                 }
                 break;
