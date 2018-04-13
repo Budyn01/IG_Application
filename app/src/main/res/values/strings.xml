@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Markets Prices</string>
+    <string-array name="countries">
+        <item>United Kingdom</item>
+        <item>Germany</item>
+        <item>France</item>
+    </string-array>
+</resources>
